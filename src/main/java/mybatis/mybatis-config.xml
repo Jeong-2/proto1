@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org/DTD config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+
+
+	<typeAliases><!-- model 구문 -->
+		<typeAlias type="model.Consumer1" alias="consumer" />
+		<typeAlias type="model.Board" alias="board" />
+		<typeAlias type="model.Drink" alias="drink" />
+		<typeAlias type="model.Subscript" alias="subscript" />
+		<typeAlias type="model.Interest" alias="interest" />
+		<typeAlias type="model.Cart" alias="cart" />
+		<typeAlias type="model.CartInner" alias = "CartInner" />
+		
+	</typeAliases>
+
+	<mappers><!-- sql 구문 -->
+		<mapper resource="mybatis/consumer1.xml" />
+		<mapper resource="mybatis/board.xml" />
+		<mapper resource="mybatis/drink.xml" />
+		<mapper resource="mybatis/subscript.xml" />
+		<mapper resource="mybatis/interest.xml" />
+		<mapper resource="mybatis/cart.xml" />
+		
+		 
+	</mappers>
+</configuration>
